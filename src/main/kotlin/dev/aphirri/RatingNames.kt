@@ -1,3 +1,5 @@
+package dev.aphirri
+
 enum class RatingNames(val min: Int) {
       Deer(10000),
     Knight(4000),
