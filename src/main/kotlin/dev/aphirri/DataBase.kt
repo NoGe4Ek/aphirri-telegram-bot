@@ -1,5 +1,9 @@
+package dev.aphirri
 
-class BaseInfo {
+// todo используй этот класс, чтобы хранить пользователей и их счет
+data class User(val name: String, val score: Long)
+
+class DataBase {
     private val mu = mutableMapOf<String, Int>() //связывает id и score
     private val Players = mutableMapOf<String, String>() //связывает id и name
 
@@ -53,14 +57,4 @@ class BaseInfo {
         return text
     }
 
-}
-fun checkComm(text: String): Boolean {
-    var a: Boolean
-    if (text[0] == '/') {
-        a = false
-
-    } else {
-        a = true
-    }
-    return a
 }
